@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+import CreateGroupScreen from "./components/CreateGroupScreen"
 
+const style = {
+  backgroundColor: "black",
+  color: "white",
+  minHeight: "100vh",
+  width: "100vw",
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={style}>
+      <h1 className="text-center bg-primary">Create user groups</h1>
+      <CreateGroupScreen />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
